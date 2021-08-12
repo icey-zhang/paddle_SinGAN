@@ -36,7 +36,8 @@ python train.py input_name <input_file_name>
 
 ### 测试
 
-####随机样本  
+####随机样本 
+
 为了从任何初始生成规模生成随机样本，请首先训练SinGAN模型为所需图像(如上所述)，然后运行  
  
 ```
