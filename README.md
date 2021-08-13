@@ -26,7 +26,7 @@ python -m pip install -r requirements.txt
 要根据您自己的图像训练SinGAN模型，请将愿望训练图像放在Input/Images下，然后运行  
  
 ```
-python train.py input_name colusseum.png  
+python train.py --input_name colusseum.png  
 ``` 
  
 input_name 输入图像的名字
