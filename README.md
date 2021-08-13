@@ -41,10 +41,12 @@ python train.py input_name <input_file_name>
 为了从任何初始生成规模生成随机样本，请首先训练SinGAN模型为所需图像(如上所述)，然后运行  
  
 ```
-python test.py --input_name <training_image_file_name> --mode random_samples --gen_start_scale <generation start scale number>
+python test.py --input_name <training_image_file_name> --mode random_samples
 ```
  
-注意:为了使用完整模型，指定生成开始比例为0，从第二个比例开始生成，指定它为1，以此类推。  
+input_name 输入图像的名字
+注意:为了使用完整模型，指定生成开始比例为0，从第二个比例开始生成，指定它为1，以此类推。 
+
  
 ####任意大小的随机样本
 
@@ -53,6 +55,10 @@ python test.py --input_name <training_image_file_name> --mode random_samples --g
 ```
 python test.py --input_name <training_image_file_name> --mode random_samples_arbitrary_sizes --scale_h <horizontal scaling factor> --scale_v <vertical scaling factor>
 ```
+
+scale_h和scale_v调整图像的缩放比例
+input_name 输入图像的名字
+
 
 ## 五、代码结构
 
