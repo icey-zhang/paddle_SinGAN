@@ -26,9 +26,11 @@ python -m pip install -r requirements.txt
 要根据您自己的图像训练SinGAN模型，请将愿望训练图像放在Input/Images下，然后运行  
  
 ```
-python train.py input_name <input_file_name>  
+python train.py input_name colusseum.png  
 ``` 
  
+input_name 输入图像的名字
+
 这也将使用得到的训练模型从最粗的尺度(n=0)开始生成随机样本。  
 
 要在cpu机器上运行这段代码，在调用' main_train.py '时指定'not_cuda '
@@ -41,10 +43,11 @@ python train.py input_name <input_file_name>
 为了从任何初始生成规模生成随机样本，请首先训练SinGAN模型为所需图像(如上所述)，然后运行  
  
 ```
-python test.py --input_name <training_image_file_name> --mode random_samples
+python test.py --input_name colusseum.png --mode random_samples
 ```
  
 input_name 输入图像的名字
+
 注意:为了使用完整模型，指定生成开始比例为0，从第二个比例开始生成，指定它为1，以此类推。 
 
  
@@ -53,10 +56,11 @@ input_name 输入图像的名字
 要生成任意大小的随机样本，请首先训练SinGAN模型为所需图像(如上所述)，然后运行  
  
 ```
-python test.py --input_name <training_image_file_name> --mode random_samples_arbitrary_sizes --scale_h <horizontal scaling factor> --scale_v <vertical scaling factor>
+python test.py --input_name input_name 输入图像的名字 --mode random_samples_arbitrary_sizes --scale_h 1 --scale_v 2
 ```
 
 scale_h和scale_v调整图像的缩放比例
+
 input_name 输入图像的名字
 
 
