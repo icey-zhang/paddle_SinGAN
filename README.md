@@ -56,7 +56,7 @@ input_name 输入图像的名字
 要生成任意大小的随机样本，请首先训练SinGAN模型为所需图像(如上所述)，然后运行  
  
 ```
-python test.py --input_name input_name colusseum.png --mode random_samples_arbitrary_sizes --scale_h 2 --scale_v 1
+python test.py --input_name colusseum.png --mode random_samples_arbitrary_sizes --scale_h 2 --scale_v 1
 ```
 
 scale_h和scale_v调整图像的缩放比例
