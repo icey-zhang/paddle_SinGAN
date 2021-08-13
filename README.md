@@ -77,6 +77,7 @@ input_name 输入图像的名字
 ├── train.py  # 训练程序
 ├── config.py #定义一些参数
 ├── requirements.txt #所需环境
+├── log.txt #日志文件
 ```
 
 ## 六、模型信息
