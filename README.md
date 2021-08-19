@@ -9,7 +9,7 @@ code：[SinGAN](https://github.com/tamarott/SinGAN)
 
 ## 二、复现结果
 
-![Generated Results](https://github.com/icey-zhang/paddle_SinGAN/blob/main/result.png)
+![Generated Results](https://github.com/icey-zhang/paddle_SinGAN/blob/main/Output/result-Paddle.png)
 
 ## 三、环境依赖
 
