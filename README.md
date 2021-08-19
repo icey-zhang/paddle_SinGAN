@@ -71,13 +71,14 @@ input_name 输入图像的名字
 ├── TrainedModels  # 存放模型文件的路径
 ├── Input  # 存放数据集的路径
 ├── Output  # 存放程序输出的路径
+    ├── log.txt #日志文件
 ├── SinGAN  # 定义模型，工具等
 ├── test.py  # 评估程序
 ├── README.md
 ├── train.py  # 训练程序
 ├── config.py #定义一些参数
 ├── requirements.txt #所需环境
-├── log.txt #日志文件
+
 ```
 
 ## 六、模型信息
