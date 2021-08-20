@@ -90,4 +90,4 @@ input_name 输入图像的名字
 | 框架版本 | Paddle 2.1.2 |
 | 应用场景 | 图像生成 |
 | 下载链接 | [预训练模型](https://pan.baidu.com/s/1MGA0GT1jkgAvd0REjN1aRg) 提取码：ipbt |
-| 飞桨项目 | [欢迎fork](https://aistudio.baidu.com/aistudio/projectdetail/2285122?shared=1) |
+| 飞桨项目 | [欢迎fork](https://aistudio.baidu.com/aistudio/projectdetail/2298194) |
