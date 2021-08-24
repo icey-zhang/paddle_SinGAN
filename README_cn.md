@@ -98,15 +98,15 @@ python test.py --input_name colusseum.png --mode random_samples_arbitrary_sizes 
 ├─TrainedModels                   # 模型存放位置
 ├─Input                           # 存放数据集的路径
 ├─Output                          # 存放生成图像的位置
-├─SinGAN                          # 定义模型，工具等
+├─model                           # 定义模型，工具等
+├─config                          # 定义一些模型与训练相关参数
 │  run.sh                         # 运行脚本
 │  test.py                        # 评估
 │  init.sh                        # 安装依赖
 |  README_cn.md                   # 中文用户手册
 |  README.md                      # 英文用户手
 │  requirement.txt                # 依赖
-│  train.py                       # 训练
-│  config.py                      #定义一些模型与训练相关参数
+│  train.py                       # 训练                    
 ```
 
 ### 6.2 参数说明
