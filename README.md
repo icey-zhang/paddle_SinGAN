@@ -76,7 +76,7 @@ python3 -m paddle.distributed.launch --log_dir=./debug/ --gpus '0,1,2,3' train.p
 ```
 
 ### step3: 测试
-- 随机样本。
+- 随机样本
 ```bash
 python test.py --input_name colusseum.png --mode random_samples --gen_start_scale 0
 ```
