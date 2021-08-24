@@ -99,9 +99,9 @@ Download the pre-training weights in the main directory, then run the above comm
 ├─TrainedModels             
 ├─config                        
 ├─dataset                     
-├─models                      
-├─results                    
-├─utils                         
+├─models    
+├─Input
+├─Output
 │  run.sh                  
 │  eval.py                    
 │  init.sh                     
