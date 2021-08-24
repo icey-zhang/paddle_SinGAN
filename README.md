@@ -119,13 +119,15 @@ python eval.py --input_name colusseum.png --mode random_samples_arbitrary_sizes 
 | input_dir| Input/Images, 必选| 输入图片的路径 |
 | input_name| None, 必选 | 输入图片的名字 |
 | mode| train, 必选 | 训练与测试的模式 |
+
 可以在 `eval.py` 中设置测试相关参数，具体如下：
 
 |  参数   | 默认值  | 说明 |
 |  ----  |  ----  |  ----  |
 | input_dir| Input/Images, 必选| 输入图片的路径 |
 | input_name| None, 必选 | 图片的名字 |
-| mode| None, 必选 | random_samples 随机生成与原图片一样大的图片random_samples_arbitrary_sizes 随机生成任意尺寸的图片|
+| mode| None, 必选 | random_samples 随机生成与原图片一样大的图片
+random_samples_arbitrary_sizes 随机生成任意尺寸的图片|
 | gen_start_scale| None, 必选 | 金字塔结构开始的位置|
 | scale_h| None, 可选 | 调整图像的缩放比例|
 | scale_v| None, 可选 | 调整图像的缩放比例|
