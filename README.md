@@ -21,7 +21,7 @@ English | [简体中文](./README_cn.md)
 This project is based on the Paddlepaddle framework to reproduce SinGAN, a new unconditional generation model that can be learned from a single natural image. This model contains a fully convolution pyramid structure of GANs, and each GANs is responsible for learning different patch distributions on images of different proportions. This allows for the generation of new samples of arbitrary size and aspect ratio, with significant variability, while maintaining the global structure and fine texture of the training image. Compared with previous single image generation schemes, this method is not limited to texture images and has no conditions (that is, to generate samples from noise).
 
 
-**论文:**
+**Paper:**
 - [1] Shaham T R, Dekel T, Michaeli T. Singan: Learning a generative model from a single natural image[C]//Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019: 4570-4580.<br>
 
 **Reference project：**
