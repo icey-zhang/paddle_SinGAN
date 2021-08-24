@@ -36,7 +36,7 @@ This project is based on the Paddlepaddle framework to reproduce SinGAN, a new u
 ![Generated Results](https://github.com/icey-zhang/paddle_SinGAN/blob/main/Output/result-Paddle.png)
 
 **Model Weight Download**
-Address：([Baiduyun](https://pan.baidu.com/s/1MGA0GT1jkgAvd0REjN1aRg) 提取码：ipbt)
+Address：([Baiduyun](https://pan.baidu.com/s/1MGA0GT1jkgAvd0REjN1aRg) code：ipbt)
 
 ## 3 Dataset
 
