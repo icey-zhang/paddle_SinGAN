@@ -1,9 +1,24 @@
+#encoding=utf8
+# Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+
+#     http://www.apache.org/licenses/LICENSE-2.0
+
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import os
 os.environ['CUDA_VISIBLE_DEVICES']="0"
 from config import get_arguments
-from SinGAN.manipulate import *
-from SinGAN.training import *
-import SinGAN.functions as functions
+from model.manipulate import *
+from model.training import *
+import model.functions as functions
 import datetime
 
 if __name__ == '__main__':
@@ -20,18 +35,6 @@ if __name__ == '__main__':
     NoiseAmp = []
     dir2save = functions.generate_dir2save(opt)
 
-    # if (os.path.exists(dir2save)):
-    #     print('trained model already exist')
-    # else:
-    #     try:
-    #         os.makedirs(dir2save)
-    #     except OSError:
-    #         pass
-    #     real = functions.read_image(opt)
-    #     functions.adjust_scales2image(real, opt)
-    #     train(opt, Gs, Zs, reals, NoiseAmp)
-    #     SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt)
-
     try:
         os.makedirs(dir2save)
         
@@ -41,19 +44,3 @@ if __name__ == '__main__':
     functions.adjust_scales2image(real, opt)
     train(opt, Gs, Zs, reals, NoiseAmp)
     SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,num_samples=2)
-
-
-    ### Debug
-    ## save trained pyramid
-    # for i in range(len(Gs)):
-    #     paddle.save(Gs[i].state_dict(), '%s/Gs'% dir2save+str(i)+'.pdparams' )
-    
-    # paddle.save(Zs, '%s/Zs.pdparams' % dir2save)
-    # paddle.save(reals, '%s/reals.pdparams' % dir2save)
-    # paddle.save(NoiseAmp, '%s/NoiseAmp.pdparams' % dir2save)
-    # ## save trained pyramid
-
-    # Gs, Zs, reals, NoiseAmp = load_trained_pyramid_New(opt)
-
-    # SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,num_samples=2)
-    ### Debug
