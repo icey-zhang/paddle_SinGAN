@@ -42,9 +42,9 @@ def train(opt,Gs,Zs,reals,NoiseAmp):
 
         z_curr,in_s,G_curr = train_single_scale(D_curr,G_curr,reals,Gs,Zs,in_s,NoiseAmp,opt)
 
-        G_curr = functions.reset_grads(G_curr,False)
+        functions.reset_grads(G_curr,False)
         G_curr.eval()
-        D_curr = functions.reset_grads(D_curr,False)
+        functions.reset_grads(D_curr,False)
         D_curr.eval()
 
         Gs.append(G_curr)
