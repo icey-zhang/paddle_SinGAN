@@ -107,6 +107,7 @@ python test.py --input_name colusseum.png --mode random_samples_arbitrary_sizes 
 │  requirement.txt                # 依赖
 │  train.py                       # 训练
 │  config.py                      #定义一些模型与训练相关参数
+```
 
 ### 6.2 参数说明
 
