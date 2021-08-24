@@ -126,8 +126,7 @@ python eval.py --input_name colusseum.png --mode random_samples_arbitrary_sizes 
 |  ----  |  ----  |  ----  |
 | input_dir| Input/Images, 必选| 输入图片的路径 |
 | input_name| None, 必选 | 图片的名字 |
-| mode| None, 必选 | random_samples 随机生成与原图片一样大的图片
-random_samples_arbitrary_sizes 随机生成任意尺寸的图片|
+| mode| None, 必选 | random_samples 随机生成与原图片一样大的图片；random_samples_arbitrary_sizes 随机生成任意尺寸的图片|
 | gen_start_scale| None, 必选 | 金字塔结构开始的位置|
 | scale_h| None, 可选 | 调整图像的缩放比例|
 | scale_v| None, 可选 | 调整图像的缩放比例|
