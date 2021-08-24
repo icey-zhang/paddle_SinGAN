@@ -14,7 +14,7 @@
 # limitations under the License.
 
 import os
-os.environ['CUDA_VISIBLE_DEVICES']="0"
+# os.environ['CUDA_VISIBLE_DEVICES']="0"
 from config import get_arguments
 from model.manipulate import *
 from model.training import *
