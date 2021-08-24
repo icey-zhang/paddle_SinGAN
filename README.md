@@ -41,7 +41,7 @@
 ## 三、数据集
 
 任意一张图片都可以作为训练集，本项目提供了一些可供训练的图片。
-[Images](https://github.com/icey-zhang/paddle_SinGAN/tree/main/Input)
+[Images](https://github.com/icey-zhang/paddle_SinGAN/tree/main/Input/Images)
 
 ## 四、环境依赖
 
@@ -78,13 +78,13 @@ python3 -m paddle.distributed.launch --log_dir=./debug/ --gpus '0,1,2,3' train.p
 ### step3: 测试
 - 随机样本。
 ```bash
-python eval.py --input_name colusseum.png --mode random_samples --gen_start_scale 0
+python test.py --input_name colusseum.png --mode random_samples --gen_start_scale 0
 ```
 注意:为了使用完整模型，指定金字塔结构生成开始层（gen_start_scale）为0，从第二层开始生成，指定它为1，以此类推。
 
 - 任意大小的随机样本
 ```bash
-python eval.py --input_name colusseum.png --mode random_samples_arbitrary_sizes --scale_h 2 --scale_v 1
+python test.py --input_name colusseum.png --mode random_samples_arbitrary_sizes --scale_h 2 --scale_v 1
 ```
 - 使用预训练权重测试
 
@@ -96,19 +96,17 @@ python eval.py --input_name colusseum.png --mode random_samples_arbitrary_sizes 
 ```
 ./paddle_SinGAN-main
 ├─TrainedModels                   # 模型存放位置
-├─config                          # 配置
-├─dataset                         # 数据集加载
-├─models                          # 模型
-├─results                         # 可视化结果
-├─utils                           # 工具类API文件夹
+├─Input                           # 存放数据集的路径
+├─Output                          # 存放生成图像的位置
+├─SinGAN                          # 定义模型，工具等
 │  run.sh                         # 运行脚本
-│  eval.py                        # 评估
+│  test.py                        # 评估
 │  init.sh                        # 安装依赖
 |  README_cn.md                   # 中文用户手册
 |  README.md                      # 英文用户手
 │  requirement.txt                # 依赖
 │  train.py                       # 训练
-```
+│  config.py                      #定义一些模型与训练相关参数
 
 ### 6.2 参数说明
 
