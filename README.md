@@ -119,7 +119,7 @@ python test.py --input_name colusseum.png --mode random_samples_arbitrary_sizes 
 | input_name| None, 必选 | 输入图片的名字 |
 | mode| train, 必选 | 训练与测试的模式 |
 
-可以在 `eval.py` 中设置测试相关参数，具体如下：
+可以在 `test.py` 中设置测试相关参数，具体如下：
 
 |  参数   | 默认值  | 说明 |
 |  ----  |  ----  |  ----  |
