@@ -29,7 +29,6 @@
 
 **项目aistudio地址：**
 - notebook任务：[https://aistudio.baidu.com/aistudio/projectdetail/2298194](https://aistudio.baidu.com/aistudio/projectdetail/2298194)
-- 脚本任务：[https://aistudio.baidu.com/aistudio/projectdetail/2298194](https://aistudio.baidu.com/aistudio/projectdetail/2298194)
 
 ## 二、复现结果
 
@@ -162,4 +161,4 @@ python test.py --input_name colusseum.png --mode random_samples_arbitrary_sizes 
 | 应用场景 | 图像生成 |
 | 支持硬件 | GPU、CPU |
 | 下载链接 | [预训练模型](https://pan.baidu.com/s/1MGA0GT1jkgAvd0REjN1aRg) 提取码：ipbt  |
-| 在线运行 | [botebook](https://aistudio.baidu.com/aistudio/projectdetail/2298194)、[脚本任务](https://aistudio.baidu.com/aistudio/projectdetail/2298194)|
+| 在线运行 | [notebook](https://aistudio.baidu.com/aistudio/projectdetail/2298194)|
